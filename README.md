@@ -1,8 +1,3 @@
-# Graphiluxe
-Passion ❤️ creative 
-
-
-
 <!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -22,13 +17,13 @@ Passion ❤️ creative
 }
 
 .header h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
+  font-size: 48px;
+  margin-bottom: 5px;
   letter-spacing: 2px;
 }
 
-.header p {
-  font-size: 18px;
+.header small {
+  font-size: 16px;
   color: #ccc;
 }
 
@@ -48,15 +43,15 @@ Passion ❤️ creative
 }
 
 .item {
-  background: purple blackish;
-  border-radius: 5px;
+  background: white;
+  border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   overflow: hidden;
-  transition: transform 0.5s ease;
+  transition: transform 0.2s ease;
 }
 
 .item:hover {
-  transform: scale(1.09);
+  transform: scale(1.03);
 }
 
 .item img {
@@ -75,39 +70,44 @@ Passion ❤️ creative
   display: block;
   margin: 10px auto 20px auto;
   padding: 10px 20px;
-  background-color: #890000;
-  color: white purple gradient;
+  background-color: #800000;
+  color: white;
   text-decoration: none;
   border-radius: 5px;
 }
 
 footer {
-  background-color: #2d5d2d;
-  color: yellow black gradient;
+  background-color: #2d2d2d;
+  color: white;
   text-align: center;
   padding: 20px;
   font-size: 14px;
 }
 
+.search-bar {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#searchInput {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
   </style>
 </head>
 <body>  <div class="header">
-    <h1>Graphiluxe</h1>
-    <p>Free PNGs 
-      • Fonts
-      • Vectors 
-      • 4K Wallpapers
-      — All in One Design Hub</p>
+    <h1><span style="color:#ffd6d6;">Graphi</span><span style="color:#fff;">luxe</span></h1>
+    <small>Design with Class</small>
+  </div>  <div class="search-bar">
+    <input type="text" id="searchInput" onkeyup="filterGallery()" placeholder="Search resources...">
   </div>  <div class="about">
     <strong>Graphiluxe</strong> is your one-stop destination for all things premium in design.<br>
-   *  Transparent PNGs
-   *  Modern Fonts
-   *  4K Wallpapers 
-   *  Vectors
-   *  Illustrations
-    – All free and high-quality.<br>
+    ✨ Transparent PNGs, ✨ Modern Fonts, ✨ 4K Wallpapers, ✨ Vectors, Illustrations – All free and high-quality.<br>
     It's not just a website – it's a <strong>luxury experience for every creative mind.</strong>
-  </div>  <div class="gallery">
+  </div>  <div class="gallery" id="gallery">
     <div class="item">
       <img src="https://i.imgur.com/klbN8dd.png" alt="PNG Sample">
       <div class="desc">Stylish PNG #1</div>
@@ -124,12 +124,23 @@ footer {
   <a href="#" class="download-btn">Download</a>
 </div>
 
-
-
-
   </div>  <footer>
-    Contact: meshiv9359@gmail.com 
-    Instagram: @kunal_raut_149
-    WhatsApp Chat: 9529460746
-  </footer></body>
+    Contact: meshiv9359@gmail.com | Instagram: @kunal_raut_149
+  </footer>  <script>
+    function filterGallery() {
+      const input = document.getElementById('searchInput');
+      const filter = input.value.toLowerCase();
+      const gallery = document.getElementById('gallery');
+      const items = gallery.getElementsByClassName('item');
+
+      for (let i = 0; i < items.length; i++) {
+        let desc = items[i].getElementsByClassName("desc")[0];
+        if (desc.innerHTML.toLowerCase().indexOf(filter) > -1) {
+          items[i].style.display = "block";
+        } else {
+          items[i].style.display = "none";
+        }
+      }
+    }
+  </script></body>
 </html>
