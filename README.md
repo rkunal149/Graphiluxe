@@ -48,15 +48,15 @@ Passion ❤️ creative
 }
 
 .item {
-  background: white;
-  border-radius: 10px;
+  background: purple blackish;
+  border-radius: 5px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   overflow: hidden;
-  transition: transform 0.2s ease;
+  transition: transform 0.5s ease;
 }
 
 .item:hover {
-  transform: scale(1.03);
+  transform: scale(1.09);
 }
 
 .item img {
@@ -75,15 +75,15 @@ Passion ❤️ creative
   display: block;
   margin: 10px auto 20px auto;
   padding: 10px 20px;
-  background-color: #800000;
-  color: white;
+  background-color: #890000;
+  color: white purple gradient;
   text-decoration: none;
   border-radius: 5px;
 }
 
 footer {
-  background-color: #2d2d2d;
-  color: white;
+  background-color: #2d5d2d;
+  color: yellow black gradient;
   text-align: center;
   padding: 20px;
   font-size: 14px;
@@ -93,10 +93,19 @@ footer {
 </head>
 <body>  <div class="header">
     <h1>Graphiluxe</h1>
-    <p>Free PNGs • Fonts • Vectors • 4K Wallpapers — All in One Design Hub</p>
+    <p>Free PNGs 
+      • Fonts
+      • Vectors 
+      • 4K Wallpapers
+      — All in One Design Hub</p>
   </div>  <div class="about">
     <strong>Graphiluxe</strong> is your one-stop destination for all things premium in design.<br>
-    ✨ Transparent PNGs, ✨ Modern Fonts, ✨ 4K Wallpapers, ✨ Vectors, Illustrations – All free and high-quality.<br>
+   *  Transparent PNGs
+   *  Modern Fonts
+   *  4K Wallpapers 
+   *  Vectors
+   *  Illustrations
+    – All free and high-quality.<br>
     It's not just a website – it's a <strong>luxury experience for every creative mind.</strong>
   </div>  <div class="gallery">
     <div class="item">
@@ -115,7 +124,12 @@ footer {
   <a href="#" class="download-btn">Download</a>
 </div>
 
+
+
+
   </div>  <footer>
-    Contact: meshiv9359@gmail.com | Instagram: @kunal_raut_149
+    Contact: meshiv9359@gmail.com 
+    Instagram: @kunal_raut_149
+    WhatsApp Chat: 9529460746
   </footer></body>
 </html>
