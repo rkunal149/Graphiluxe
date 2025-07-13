@@ -17,13 +17,13 @@
 }
 
 .header h1 {
-  font-size: 48px;
-  margin-bottom: 5px;
+  font-size: 42px;
+  margin-bottom: 10px;
   letter-spacing: 2px;
 }
 
-.header small {
-  font-size: 16px;
+.header p {
+  font-size: 18px;
   color: #ccc;
 }
 
@@ -84,30 +84,16 @@ footer {
   font-size: 14px;
 }
 
-.search-bar {
-  text-align: center;
-  margin-top: 20px;
-}
-
-#searchInput {
-  padding: 10px;
-  width: 300px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
   </style>
 </head>
 <body>  <div class="header">
-    <h1><span style="color:#ffd6d6;">Graphi</span><span style="color:#fff;">luxe</span></h1>
-    <small>Design with Class</small>
-  </div>  <div class="search-bar">
-    <input type="text" id="searchInput" onkeyup="filterGallery()" placeholder="Search resources...">
+    <h1>Graphiluxe</h1>
+    <p>Free PNGs • Fonts • Vectors • 4K Wallpapers — All in One Design Hub</p>
   </div>  <div class="about">
-    <strong>Graphiluxe</strong> is your one-stop destination for all things premium in design.<br>
-    ✨ Transparent PNGs, ✨ Modern Fonts, ✨ 4K Wallpapers, ✨ Vectors, Illustrations – All free and high-quality.<br>
+    <strong>Graphiluxe</strong> is your one-stop destination for all things premium in design.
+    
     It's not just a website – it's a <strong>luxury experience for every creative mind.</strong>
-  </div>  <div class="gallery" id="gallery">
+  </div>  <div class="gallery">
     <div class="item">
       <img src="https://i.imgur.com/klbN8dd.png" alt="PNG Sample">
       <div class="desc">Stylish PNG #1</div>
@@ -126,21 +112,5 @@ footer {
 
   </div>  <footer>
     Contact: meshiv9359@gmail.com | Instagram: @kunal_raut_149
-  </footer>  <script>
-    function filterGallery() {
-      const input = document.getElementById('searchInput');
-      const filter = input.value.toLowerCase();
-      const gallery = document.getElementById('gallery');
-      const items = gallery.getElementsByClassName('item');
-
-      for (let i = 0; i < items.length; i++) {
-        let desc = items[i].getElementsByClassName("desc")[0];
-        if (desc.innerHTML.toLowerCase().indexOf(filter) > -1) {
-          items[i].style.display = "block";
-        } else {
-          items[i].style.display = "none";
-        }
-      }
-    }
-  </script></body>
+  </footer></body>
 </html>
